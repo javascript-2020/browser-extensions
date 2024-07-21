@@ -1,0 +1,31 @@
+
+
+
+        {
+              "background"                              : {"scripts":["extension.js"]},
+              
+              "manifest_version"                        : 3,
+              "name"                                    : "chat.stackoverflow.com",
+              "version"                                 : "1.0.0",
+              "icons"                                   : {"64":"stackoverflow.png"},
+              "permissions"                             : [],
+              "host_permissions"                        : ["http://localhost/*","https://chat.stackoverflow.com/*"],
+              
+              "content_scripts"   : [{
+                    "matches"                           : ["https://chat.stackoverflow.com/*","http://localhost/*"],
+                    "js"    : [
+                                                          "content-script.js",
+                                                          "bot.js"
+                    ]
+              }],
+              
+              "web_accessible_resources"  : [{
+                    "matches"                     : ["https://chat.stackoverflow.com/*","http://localhost/*"],
+                    "resources"   : [
+                                                    "stackoverflow.png",
+                                                    "ping.mp3"
+                    ]
+              }]
+        }
+        
+        
