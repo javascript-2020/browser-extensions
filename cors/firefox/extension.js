@@ -1,5 +1,6 @@
 
                                                                       console.clear();
+                                                                      console.log('extension.js');
           if(typeof browser==='undefined'){
                 browser   = chrome;
           }
