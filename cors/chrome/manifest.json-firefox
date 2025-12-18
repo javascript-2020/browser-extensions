@@ -1,0 +1,24 @@
+
+
+
+
+        {
+        
+              "manifest_version"                    : 3,
+              
+              "name"                                : "cors",
+              "version"                             : "1",
+              
+              "icons"                               : {"48":"asterisk.png"},
+              
+              "permissions"                         : ["declarativeNetRequest"],
+              
+              "background"                          : {"scripts":["extension.js"]},
+              
+              "action"                              : {"default_icon":"asterisk.png"},
+              
+              "host_permissions"                    : ["<all_urls>"]
+              
+        }
+        
+        

@@ -1,0 +1,22 @@
+
+
+{
+
+  
+      "manifest_version"        : 2,
+      
+      "name"                    : "hdrs",
+      
+      "version"                 : "1",
+      
+      "icons"                   : {"48":"asterisk.png"},
+    
+      "permissions"             : ["<all_urls>","webRequest","webRequestBlocking"],
+    
+      "background"              : {"scripts":["extension.js"]},
+    
+      "browser_action"          : {"default_icon":"cube.png"}
+
+      
+}
+
