@@ -8,7 +8,7 @@
           var add   = [
                 {name:'access-control-allow-origin',value:'*'},
                 {name:'access-control-expose-headers',value:'*'},
-                {name:'access-control-alow-headers',value:'*'},
+                {name:'access-control-allow-headers',value:'*'},
           ];
           
           browser.webRequest.onHeadersReceived.addListener(handle,{urls:['<all_urls>']},['blocking','responseHeaders']);
