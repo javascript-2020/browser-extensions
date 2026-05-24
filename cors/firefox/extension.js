@@ -4,12 +4,13 @@
           if(typeof browser==='undefined'){
                 browser   = chrome;
           }
-
+          
           var add   = [
                 {name:'access-control-allow-origin',value:'*'},
-                {name:'access-control-expose-headers',value:''},
+                {name:'access-control-expose-headers',value:'*'},
+                {name:'access-control-alow-headers',value:'*'},
           ];
-
+          
           browser.webRequest.onHeadersReceived.addListener(handle,{urls:['<all_urls>']},['blocking','responseHeaders']);
           
           function handle(details){
