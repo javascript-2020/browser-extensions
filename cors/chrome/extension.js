@@ -14,7 +14,8 @@
                             type: 'modifyHeaders',
                             responseHeaders: [
                                   {header: 'access-control-allow-origin',operation:'set',value:'*'},
-                                  {header: 'access-control-expose-headers',operation:'set',value:''},
+                                  {header: 'access-control-expose-headers',operation:'set',value:'*'},
+                                  {header: 'access-control-allow-headers',operation:'set',value:'*'},
                             ],
                       },
                 };
